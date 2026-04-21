@@ -1,0 +1,109 @@
+Time: 2 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 4 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 6 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 8 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 10 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 12 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 14 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 16 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 18 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 20 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 22 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 24 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 26 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 28 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 30 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 30 | PID: 2 | CPU: 0 | Action: MEMORY_TRANSFER | Dur: 1
+Time: 30 | PID: 2 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 31 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 32 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 32 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 33 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 34 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 34 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 35 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 35 | PID: 2 | CPU:  | Action: PREEMPTED | Dur: 0
+Time: 35 | PID: 2 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 36 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 36 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 37 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 38 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 38 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 39 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 40 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 40 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 40 | PID: 2 | CPU:  | Action: PREEMPTED | Dur: 0
+Time: 40 | PID: 2 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 41 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 42 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 42 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 43 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 44 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 44 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 45 | PID: 2 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 45 | PID: 2 | CPU:  | Action: FINISHED | Dur: 0
+Time: 46 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 48 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 50 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 50 | PID: 1 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 51 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 52 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 52 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 53 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 54 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 54 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 55 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 55 | PID: 1 | CPU:  | Action: PREEMPTED | Dur: 0
+Time: 55 | PID: 1 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 56 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 56 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 57 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 58 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 58 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 59 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 60 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 60 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 60 | PID: 1 | CPU:  | Action: SWITCH_ACTIVITY | Dur: 0
+Time: 60 | PID: 1 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 61 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 62 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 62 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 63 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 64 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 64 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 65 | PID: 1 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 65 | PID: 1 | CPU:  | Action: FINISHED | Dur: 0
+Time: 66 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 68 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 70 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 72 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 74 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 76 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 78 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 80 | PID:  | CPU: 0 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 80 | PID: 3 | CPU: 0 | Action: MEMORY_TRANSFER | Dur: 5
+Time: 80 | PID: 3 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 81 | PID: 3 | CPU: 0 | Action: WAITING_FOR_MEMORY | Dur: 1
+Time: 82 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 82 | PID: 3 | CPU: 0 | Action: WAITING_FOR_MEMORY | Dur: 1
+Time: 83 | PID: 3 | CPU: 0 | Action: WAITING_FOR_MEMORY | Dur: 1
+Time: 84 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 84 | PID: 3 | CPU: 0 | Action: WAITING_FOR_MEMORY | Dur: 1
+Time: 85 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 86 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 86 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 87 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 88 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 88 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 89 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 89 | PID: 3 | CPU:  | Action: SWITCH_ACTIVITY | Dur: 0
+Time: 89 | PID: 3 | CPU: 0 | Action: SCHEDULED | Dur: 0
+Time: 90 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 90 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 91 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 92 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 92 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 93 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 94 | PID:  | CPU: 1 | Action: SYSTEM_CALL_HANDLING | Dur: 1
+Time: 94 | PID: 3 | CPU: 0 | Action: EXECUTING | Dur: 1
+Time: 94 | PID: 3 | CPU:  | Action: FINISHED | Dur: 0
