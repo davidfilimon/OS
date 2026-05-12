@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace OS.Core;
 
-public class MemoryManager
+public class MemoryManager : IMemoryManager
 {
     public int TotalMemory { get; }
     public double DiskTransferRate { get; }

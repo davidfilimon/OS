@@ -8,6 +8,19 @@ using System.Collections.Generic;
 
 namespace OS.Tests.Core;
 
+// 1. initializeaza corect memoria totala si rata de transfer
+// 2. seteaza DiskTransferRate implicit la 0 cand nu este dat
+// 3. calculeaza memoria libera cand RAM-ul este gol
+// 4. calculeaza memoria libera cand exista procese in RAM
+// 5. incarca un proces in RAM daca exista memorie disponibila
+// 6. nu duplica un proces deja incarcat in RAM
+// 7. elimina primul proces din RAM cand nu mai este loc
+// 8. elimina procese pana exista destula memorie libera
+// 9. returneaza timp de transfer 0 cand DiskTransferRate este 0
+// 10. arata comportamentul cand procesul cere mai multa memorie decat RAM-ul total
+// 11. arata comportamentul cand procesul are memorie negativa
+// 12. arata comportamentul cand memoria totala este negativa
+
 public class MemoryManagerTests
 {
     [Fact]

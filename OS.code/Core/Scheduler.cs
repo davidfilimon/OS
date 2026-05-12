@@ -7,7 +7,7 @@ namespace OS.Core;
 public class Scheduler
 {
     private List<Processor> _processors;
-    private MemoryManager _memory;
+    private IMemoryManager _memory;
     private int _timeSlice;
     private double _diskRate;
     private int _systemPeriod;
@@ -22,9 +22,9 @@ public class Scheduler
     public List<Processor> Processors => _processors;
     public List<Process> AllProcesses => _allProcesses;
 
-    public MemoryManager TotalMemory => _memory;
+    public IMemoryManager TotalMemory => _memory;
 
-    public Scheduler(int numProcessors, int ramSize, double diskRate, int slice, int sysPeriod, List<Process> allProcesses)
+    public Scheduler(int numProcessors, int slice, int sysPeriod, List<Process> allProcesses, IMemoryManager memoryManager)
     {
         _processors = new List<Processor>(numProcessors);
 
@@ -33,11 +33,9 @@ public class Scheduler
             _processors.Add(new Processor(i));
         }
 
-        _memory = new MemoryManager(ramSize, diskRate);
+        _memory = memoryManager;
         _timeSlice = slice;
         _systemPeriod = sysPeriod;
-
-        _diskRate = diskRate;
 
         _allProcesses = allProcesses;
     }

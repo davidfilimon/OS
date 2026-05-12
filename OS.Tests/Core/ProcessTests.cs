@@ -8,6 +8,16 @@ using System.Collections.Generic;
 
 namespace OS.Tests.Core;
 
+// 1. verifica daca constructorul seteaza corect proprietatile de baza:
+// 2. verifica valorile implicite ale unui proces nou:
+// 3. verifica daca statusul procesului poate fi schimbat:
+// 4. verifica daca LastProcessorId poate fi modificat
+// 5. verifica daca RemainingTimeInActivity poate fi modificat
+// 6. verifica daca un proces poate fi creat cu lista de activitati goala
+// 7. verifica comportamentul la memorie negativa
+// 8. verifica comportamentul la releaseTime negativ
+// 9. verifica comportamentul la lista de activitati null
+
 public class ProcessTests
 {
     [Fact]

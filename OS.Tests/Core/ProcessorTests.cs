@@ -8,6 +8,14 @@ using System.Collections.Generic;
 
 namespace OS.Tests.Core;
 
+// 1. constructorul seteaza Id-ul
+// 2. procesorul nou este liber
+// 3. daca are CurrentProcess, nu mai este liber
+// 4. daca CurrentProcess devine null, este liber din nou
+// 5. TimeSpentInSlice are valoare implicita 0
+// 6. TimeSpentInSlice poate fi modificat
+// 7. id negativ, ca input invalid acceptat
+
 public class ProcessorTests
 {
     [Fact]
