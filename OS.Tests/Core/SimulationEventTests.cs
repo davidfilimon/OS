@@ -7,6 +7,15 @@ using Xunit;
 
 namespace OS.Tests.Core;
 
+// 1. eveniment normal cu toate valorile setate
+// 2. eveniment de sistem, unde ProcessId poate fi null
+// 3. eveniment fara procesor specific, unde ProcessorId poate fi null
+// 4. doua record-uri cu aceleasi valori sunt egale
+// 5. doua record-uri cu valori diferite nu sunt egale
+// 6. comportamentul la timp negativ
+// 7. comportamentul la durata negativa
+// 8. comportamentul la Action null
+
 public class SimulationEventTests
 {
     [Fact]
