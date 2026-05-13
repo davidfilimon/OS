@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="OS.Tests/OS.Tests.csproj" />
-  <Project Path="OS/OS.csproj" />
-</Solution>

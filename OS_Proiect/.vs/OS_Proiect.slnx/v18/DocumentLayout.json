@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Facultate\\Master Anul 1\\Semestru 2\\Calitatea Sistemelor Software\\OS_Proiect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38118D11-D538-8F99-DA34-B2ABC5558820}|OS.Code\\OS.Code.csproj|d:\\facultate\\master anul 1\\semestru 2\\calitatea sistemelor software\\os_proiect\\os.code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38118D11-D538-8F99-DA34-B2ABC5558820}|OS.Code\\OS.Code.csproj|solutionrelative:os.code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Facultate\\Master Anul 1\\Semestru 2\\Calitatea Sistemelor Software\\OS_Proiect\\OS.Code\\Program.cs",
+              "RelativeDocumentMoniker": "OS.Code\\Program.cs",
+              "ToolTip": "D:\\Facultate\\Master Anul 1\\Semestru 2\\Calitatea Sistemelor Software\\OS_Proiect\\OS.Code\\Program.cs",
+              "RelativeToolTip": "OS.Code\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T07:43:12.583Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
