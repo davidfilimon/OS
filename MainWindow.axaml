@@ -1,0 +1,99 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:OS.ViewModels"
+        xmlns:core="using:OS.Core"
+        x:Class="OS.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="OS Simulator - Professional Edition" Height="750" Width="950"
+        Background="#F5F5F5"
+        RequestedThemeVariant="Light"> <Grid RowDefinitions="Auto, Auto, *">
+
+        <Border Grid.Row="0" Background="White" BoxShadow="0 2 5 0 #20000000" Padding="15">
+            <StackPanel Spacing="15">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button Content="Play / Pause" Command="{Binding ToggleSimulation}" Background="#4CAF50" Foreground="White" Padding="15,7"/>
+                    <Button Content="Încarcă Fișier" Command="{Binding OpenFileCommand}" Background="#2196F3" Foreground="White" Padding="15,7"/>
+                    <Button Content="Pasul Următor (Tick)" Command="{Binding RunNextTick}" IsEnabled="{Binding !IsRunning}" Padding="15,7"/>
+                    <Button Content="Export Log" Command="{Binding ExportLog}" Padding="15,7"/>
+                    <Button Content="Resetare" Command="{Binding ResetSimulation}" Padding="15,7"/>
+
+                    <Separator Width="2" Height="20" Margin="10,0" Background="#DDD"/>
+
+                    <TextBlock Text="{Binding StatusMessage}" VerticalAlignment="Center" FontWeight="Medium" Foreground="#333"/>
+                </StackPanel>
+
+                <Grid ColumnDefinitions="*, 40, *">
+                    <StackPanel Grid.Column="0" Spacing="5">
+                        <Grid ColumnDefinitions="Auto, *">
+                            <TextBlock Grid.Column="0" Text="Utilizare RAM" FontSize="11" FontWeight="Bold" Foreground="#2C3E50"/>
+                            <TextBlock Grid.Column="1" Text="{Binding CurrentRamUsage, StringFormat='{}{0} MB'}" FontSize="11" HorizontalAlignment="Right" Foreground="#444"/>
+                        </Grid>
+                        <ProgressBar Value="{Binding CurrentRamUsage}" Maximum="{Binding MaxRam}" Height="12" Foreground="Orange" CornerRadius="4" Background="#EEE"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Spacing="5">
+                        <Grid ColumnDefinitions="Auto, *">
+                            <TextBlock Grid.Column="0" Text="Încărcare CPU" FontSize="11" FontWeight="Bold" Foreground="#2C3E50"/>
+                            <TextBlock Grid.Column="1" Text="{Binding CpuLoad, StringFormat='{}{0}%'}" FontSize="11" HorizontalAlignment="Right" Foreground="#444"/>
+                        </Grid>
+                        <ProgressBar Value="{Binding CpuLoad}" Maximum="100" Height="12" Foreground="Green" CornerRadius="4" Background="#EEE"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Row="1" Margin="20,15,20,0">
+            <TextBlock Text="Grafic Gantt (Vizualizare Procesoare)" FontWeight="Bold" FontSize="14" Margin="0,0,0,10" Foreground="#2C3E50"/>
+
+            <Border Background="#2D2D2D" CornerRadius="8" Padding="15" Height="160">
+                <DockPanel>
+                    <StackPanel DockPanel.Dock="Left" VerticalAlignment="Top" Margin="0,5,15,0" Spacing="30">
+                        <TextBlock Text="CPU 0" Foreground="#ECF0F1" FontSize="11" FontWeight="Bold" Height="30" VerticalAlignment="Center"/>
+                        <TextBlock Text="CPU 1" Foreground="#ECF0F1" FontSize="11" FontWeight="Bold" Height="30" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                        <ItemsControl ItemsSource="{Binding GanttSegments}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Canvas Width="10000" Height="100" Background="#1E1E1E"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate x:DataType="vm:GanttSegment">
+                                    <Rectangle Width="20"
+                                               Height="30"
+                                               Fill="{Binding Color}"
+                                               ToolTip.Tip="{Binding Label}">
+                                        <Rectangle.RenderTransform>
+                                            <TranslateTransform X="{Binding X}" Y="{Binding Y}"/>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </DockPanel>
+            </Border>
+        </StackPanel>
+
+        <Grid Grid.Row="2" Margin="20,15,20,20" RowDefinitions="Auto, *">
+            <TextBlock Grid.Row="0" Text="Istoric Evenimente (Live Log)" FontWeight="Bold" FontSize="14" Margin="0,0,0,10" Foreground="#2C3E50"/>
+
+            <Border Grid.Row="1" Background="White" CornerRadius="8" BorderBrush="#DDD" BorderThickness="1" ClipToBounds="True">
+                <ListBox ItemsSource="{Binding DisplayEvents}" BorderThickness="0" Background="White">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate x:DataType="core:SimulationEvent">
+                            <Grid ColumnDefinitions="100, 220, 100, *" Margin="5">
+                                <TextBlock Grid.Column="0" Text="{Binding Time, StringFormat='Time: {0}'}" Foreground="#555555"/>
+                                <TextBlock Grid.Column="1" Text="{Binding Action}" FontWeight="Bold" Foreground="#222222"/>
+                                <TextBlock Grid.Column="2" Text="{Binding ProcessId, StringFormat='PID: {0}'}" Foreground="#2980B9"/>
+                                <TextBlock Grid.Column="3" Text="{Binding Duration, StringFormat='Dur: {0}'}" Foreground="#D35400"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

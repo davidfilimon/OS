@@ -76,7 +76,7 @@ public class MainWindowViewModel : ReactiveObject
         activities.Enqueue(new Activity { Type = ActivityType.SysCall, Duration = 2 });
         activities.Enqueue(new Activity { Type = ActivityType.Execution, Duration = 3 });
 
-        var p1 = new Process(1, 2, 10, activities);
+        var p1 = new Process(1, 0, 10, activities);
         var processList = new List<Process> { p1 };
 
         // Cream Scheduler-ul (2 CPU, 100 RAM, 0.5 disc rate, 5 time slice, 10 system period)

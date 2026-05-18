@@ -1,0 +1,2 @@
+/home/vidad/OS/obj/Debug/net10.0/OS.csproj.AssemblyReference.cache
+/home/vidad/OS/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache
